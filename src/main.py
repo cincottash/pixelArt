@@ -10,7 +10,6 @@ def main():
 		for event in pygame.event.get():
 			if event.type == pygame.KEYDOWN:
 				if(event.key == pygame.K_RETURN):
-
 					exit(0)
 		#Iterate over canvas by block
 		if(ranOnce == 0):
@@ -23,6 +22,7 @@ def main():
 					avgR = 0
 					avgG = 0
 					avgB = 0
+					#iterate by pixel over block
 					for pixelX in range(blockSize):
 						for pixelY in range(blockSize):
 							pixel = canvas.get_at((pixelStartX + pixelX, pixelStartY + pixelY))
