@@ -7,6 +7,10 @@ def main():
 		#BLITS AT TOP LEFT COORDS (0,0)
 		canvas.blit(picture, (0, 0))
 
+		for event in pygame.event.get():
+			if event.type == pygame.KEYDOWN:
+				if(event.key == pygame.K_RETURN):
+					exit(0)
 		#Iterate over canvas by block
 		if(ranOnce == 0):
 			for i in range(canvasWidth//blockSize):

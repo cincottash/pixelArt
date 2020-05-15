@@ -1,10 +1,14 @@
 from globals import *
+import sys
 import pygame
 
 def setup():
-	pygame.init()
 	canvas = pygame.display.set_mode((canvasWidth, canvasHeight))
-
-	image = pygame.image.load("assets/earth.jpg")
+	try:
+		picDir = sys.argv[1]
+		image = pygame.image.load("assets/{}".format(picDir))
+	except IndexError:
+		print("Please supply an image")
+		exit(0)
 
 	return canvas, image
