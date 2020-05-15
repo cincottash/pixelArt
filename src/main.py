@@ -10,6 +10,7 @@ def main():
 		for event in pygame.event.get():
 			if event.type == pygame.KEYDOWN:
 				if(event.key == pygame.K_RETURN):
+
 					exit(0)
 		#Iterate over canvas by block
 		if(ranOnce == 0):

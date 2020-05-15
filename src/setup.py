@@ -1,5 +1,4 @@
 from globals import *
-import sys
 import pygame
 
 def setup():
