@@ -1,7 +1,7 @@
 from setup import *
 
 def main():
-	canvas, picture = setup()
+	canvas, picture, blockSize = setup()
 	ranOnce = 0
 	while(True):
 		#BLITS AT TOP LEFT COORDS (0,0)
